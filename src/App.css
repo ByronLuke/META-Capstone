@@ -16,6 +16,8 @@
   margin-right: 15px;
 }
 
+a:visited { color:purple; }
+
 body {
   background-color: #ffffe0;
   margin: 0;
@@ -28,4 +30,73 @@ footer {
   border-radius: 5px;
   text-align: center;
   margin-top: 20px;
+}
+
+.booking-form-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff3cd; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.booking-form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.booking-form .form-group {
+  margin-bottom: 20px;
+}
+
+.booking-form .form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.booking-form .form-group input,
+.booking-form .form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  background-color: #f8d7da; 
+  color: #333; 
+}
+
+.booking-form .submit-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #d4edda; 
+  color: #155724;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.booking-form .submit-button:hover {
+  background-color: #c3e6cb; 
+}
+
+@media (max-width: 600px) {
+  .booking-form-container {
+    padding: 15px;
+  }
+
+  .booking-form-container h2 {
+    font-size: 20px;
+  }
+
+  .booking-form .submit-button {
+    font-size: 16px;
+  }
 }
